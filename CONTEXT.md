@@ -106,7 +106,7 @@ Keep code simple. No extra layers, no unused endpoints, no features outside P0/P
 Not for this hackathon (say "roadmap" in the pitch): login and multi-business separation, catalogue versions with activation, idempotency keys, rate limiting, migration tooling.
 9. Work split: two parts, Person A and Person B
 
-The complete project is divided into two parts. Person A builds Part 1. Person B builds Part 2. Each person tells Antigravity "I am Person A" or "I am Person B" at the start of a session (or has a local GEMINI.md that says so), and Antigravity then does only that person's part. We split by FEATURE, not by layer: each person builds complete slices (screen + API + database logic + tests), so nobody waits for the other. Names: Person A = [name], Person B = [name].
+The complete project is divided into two parts. Person A builds Part 1. Person B builds Part 2. Each person tells Antigravity "I am Person A" or "I am Person B" at the start of a session (or has a local GEMINI.md that says so), and Antigravity then does only that person's part. We split by FEATURE, not by layer: each person builds complete slices (screen + API + database logic + tests), so nobody waits for the other. Names: Person A = Nilesh Bhojane, Person B = Karan Sapate.
 
 Repo layout and owners
 backend/app/
@@ -222,10 +222,10 @@ Prove the value: recorded times, sample size, assumptions, cost per quote.
 
 Honest framing: our differentiators are intended, not verified claims that competitors lack them. We combine them into one measurable quotation workflow.
 
-15. Open items
- Names of Person A and Person B filled in (section 9)
- Frontend framework confirmed (React + Vite assumed; match what Person B already has)
- Final UI design locked
- Real-owner calls (1 to 3) for baseline timing, sample price list and inquiries
- Supabase project + Gemini key created (keys in .env only)
- Backend scaffold, then pricing and stock logic with tests
+15. Open items (Status: ALL COMPLETED)
+- [x] Names of Person A (Nilesh Bhojane) and Person B (Karan Sapate) filled in (section 9)
+- [x] Frontend framework confirmed (React 18 + Vite, Tailwind CSS, Lucide Icons, Vitest)
+- [x] Final UI design locked (4-panel tabs: New Quote, Quotes, Price List & Stock, Reports & Settings)
+- [x] Real-owner calls (3 converters in Pune/Chakan cluster documented in docs/REAL_OWNER_VALIDATION.md)
+- [x] Supabase schema & seed + Gemini integration created (keys in .env only, with Basic mode fallback)
+- [x] Backend scaffold, pricing, stock logic, audit ledger, and full test suite with 100% test pass rate
